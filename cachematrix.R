@@ -2,6 +2,7 @@
 
 ## Create a matrix structure to hold the cached results
 makeCacheMatrix <- function(x = matrix()) {
+	## Based on makeVector from assignment example
 	m <- NULL
 	## Functions are set, get, setinvert, and getinvert
 	set <- function(y) {
@@ -21,6 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Get the inverse of a matrix - use the cached version if available
 cacheSolve <- function(x, ...) {
+	## Based on cachemean from assignment example
 	## Return a matrix that is the inverse of 'x' (a result of makeCacheMatrix)
 	m <- x$getinvert()
 	
